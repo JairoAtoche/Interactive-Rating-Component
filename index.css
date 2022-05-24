@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary Colors */
+    --orange: hsl(25, 97%, 53%);
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    /* font */
+    font-family: 'Overpass', sans-serif; /* 400 / 700 */
+}
+
+/* hidden submit-container */
+.main__submit-container {
+    display: none;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--very-dark-blue);
+    min-height: 100vh;
+}
+
+.main__rating-container, .main__submit-container {
+    background-color: #1C232D;
+    width: 325px;
+    height: 350px;
+    margin: auto 1.5rem;
+    border-radius: 20px;
+    padding-left: 1.5rem;
+    padding-top: 1.88rem;
+    padding-right: 1.5rem;
+}
+
+.rating__img-container {
+    border-radius: 50%;
+    background-color: #262F38;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rating__img {
+    width: 13px;
+}
+
+.rating__h1 {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+.rating__p {
+    color: var(--medium-grey);
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+.rating__button-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.button-list__button {
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--light-grey);
+    background-color: #262F38;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+.button-list__button:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    transition-duration: 0.5s;
+}
+.rating__submit {
+    height: 45px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: var(--orange);
+    border: none;
+    color: var(--white);
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.rating__submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    transition-duration: 0.5s;
+}
+.submit__img-container {
+    text-align: center;
+    margin-bottom: 18px;
+}
+.submit__img {
+    height: 95px;
+}
+.submit__p--modifier{
+    color: var(--orange);
+    background-color:#262F38;
+    border-radius: 25px;
+    margin: auto;
+    width: 180px;
+    height: 30px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit__h2{
+    text-align: center;
+    color: var(--white);
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+.submit__p {
+    font-size: 14px;
+    color: var(--medium-grey);
+    text-align: center;
+    line-height: 24px;
+}   
+
+.footer__attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--white);
+}
+.footer__a { 
+    color: var(--orange); 
+}
+
+@media screen and (min-width: 1240px) {
+    .main__rating-container, .main__submit-container {
+        width: 410px;
+        height: 400px;
+        padding-left: 30px;
+    }
+    .rating__img-container {
+        height: 50px;
+        width: 50px;
+        margin-bottom: 30px;
+    }
+    .rating__img {
+        width: 18px;
+    }
+    .rating__h1 {
+        font-size: 29px;
+    }
+    .rating__p {
+        margin-right: 20px;
+        font-size: 15px;
+    }
+    .rating__button-list-container {
+        justify-content: space-between;
+        margin-right: 18px;
+        margin-bottom: 12px;
+    }
+    .button-list__button {
+        width: 50px;
+        height: 50px;
+    }
+    .rating__submit {
+        width: 96%;
+        font-size: 14px;
+    }
+    .submit__img{
+        height: 108px;
+        margin-top: 18px;
+        margin-bottom: 8px;
+    }
+    .submit__h2 {
+        font-size: 27px;
+        font-weight: 400;
+    }
+    .submit__p {
+        font-size: 15px;
+        margin: auto 10px;
+    }
+}

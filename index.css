@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     /* Primary Colors */
     --orange: hsl(25, 97%, 53%);
@@ -17,6 +11,12 @@
     --very-dark-blue: hsl(216, 12%, 8%);
     /* font */
     font-family: 'Overpass', sans-serif; /* 400 / 700 */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* hidden submit-container */
@@ -148,6 +148,10 @@
 .footer__a { 
     color: var(--orange); 
 }
+.button-list__button--activo {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
 
 @media screen and (min-width: 1240px) {
     .main__rating-container, .main__submit-container {
@@ -178,6 +182,7 @@
     .button-list__button {
         width: 50px;
         height: 50px;
+        font-size: 15px;
     }
     .rating__submit {
         width: 96%;
